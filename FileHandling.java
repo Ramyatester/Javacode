@@ -20,8 +20,18 @@ public class FileHandling {
 			
 			String line= myScanner .nextLine();
 			
+
 	 System.out.println(line);
+     String str = line;
+    String[] arr= str.split("@", 4);
 			
+    for(String a:arr) {
+    	
+    	
+    	//System.out.println("Username :"+line.split("@", 4));
+    	System.out.println(a);
+    	//System.out.println("Password :"+a);
+    }
 		}
 		}
 		catch(FileNotFoundException f)
@@ -30,7 +40,10 @@ public class FileHandling {
 			
 		}		
 		
-		finally {}
+		finally {
+		
+
+		}
 		
 	}
 
