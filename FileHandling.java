@@ -23,24 +23,26 @@ public class FileHandling {
 
 	 System.out.println(line);
      String str = line;
-    String[] arr= str.split("@", 4);
-			
-    for(String a:arr) {
-    	
-    	
-    	//System.out.println("Username :"+line.split("@", 4));
-    	System.out.println(a);
-    	//System.out.println("Password :"+a);
-    }
+    String[] arr= str.split("@");
+   
+  for(String a:arr) {
+	  
+    		//System.out.println("Username :"+line.split("@"));
+	  if (a.contentEquals("Ramya"))
+		 
+    	System.out.println("Username :"+a );
+    	System.out.println("Password :"+a);
+    break;
+     }
+
 		}
 		}
 		catch(FileNotFoundException f)
 		{
 			System.out.println("File not found");
-			
 		}		
 		
-		finally {
+	finally {
 		
 
 		}
